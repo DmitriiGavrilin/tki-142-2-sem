@@ -5,7 +5,9 @@
  */
 class Hexagon {
 private:
+/** @brief радиус шестиугольника **/
     double radius;
+/** @brief сторона шестиугольника **/
     double side;
 public:
     /**
