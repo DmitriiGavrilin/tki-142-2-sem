@@ -27,7 +27,7 @@ private:
          * @brief Конструктор узла.
          * @param value Значение для инициализации данных.
          */
-        Node(int value);
+        Node(const int value);
     };
 
     Node* head;       ///< Указатель на первый элемент списка (голову).
