@@ -70,7 +70,7 @@ size_t CircularDoublyLinkedList::getSize() const
     return size;
 }
 
-void CircularDoublyLinkedList::push(int value)
+void CircularDoublyLinkedList::push(const int value)
 {
     Node* node = new Node(value);
 
@@ -95,7 +95,7 @@ void CircularDoublyLinkedList::push(int value)
     ++size;
 }
 
-void CircularDoublyLinkedList::pop(int value)
+void CircularDoublyLinkedList::pop(const int value)
 {
     if (head == nullptr)
         return;
@@ -131,7 +131,7 @@ void CircularDoublyLinkedList::pop(int value)
     while (current != head);
 }
 
-bool CircularDoublyLinkedList::find(int value) const
+bool CircularDoublyLinkedList::find(const int value) const
 {
     if (head == nullptr)
         return false;
@@ -151,8 +151,8 @@ bool CircularDoublyLinkedList::find(int value) const
 }
 
 void CircularDoublyLinkedList::replace(
-    int oldValue,
-    int newValue)
+    const int oldValue,
+    const int newValue)
 {
     if (head == nullptr)
         return;
